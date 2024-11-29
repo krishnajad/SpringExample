@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="alian" class="org.example.Alian" scope="Prototype">-->
+<!--    </bean>-->
+
+         <bean id="alian" class="org.example.Alian" >
+
+         </bean>
+
+            <bean id="laptop" class="org.example.Laptop" >
+                <property name="noOflaptop" value="20"></property>
+                <property name="al" ref="alian"></property>
+            </bean>
+        </beans>
